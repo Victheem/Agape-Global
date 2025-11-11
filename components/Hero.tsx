@@ -1,4 +1,3 @@
-// app/page.tsx
 "use client";
 
 import { useEffect } from "react";
@@ -17,7 +16,7 @@ import ServiceCards from "./ServiceCards";
  * - Requires: framer-motion, tailwindcss
  */
 
-export default function Home () {
+export default function Hero () {
   useEffect(() => {
     // small safety for servers where motion might misbehave if SSR/no-window
     // (not strictly necessary in most Next projects)
@@ -104,7 +103,7 @@ export default function Home () {
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-800 bg-gradient-to-br from-[#041029] to-[#071426]">
                 <div className="relative h-96 w-full">
                   <Image
-                    src="/images/woman 2.jpg"
+                    src="/images/hero-image.jpg"
                     alt="Woman holding phone with fintech elements"
                     fill
                     className="object-cover"
@@ -179,7 +178,7 @@ export default function Home () {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-800 h-72 md:h-96">
-                <Image src="/images/woman 6.jpg" alt="Who we are image" fill className="object-cover" />
+                <Image src="/images/blacky.jpg" alt="Who we are image" fill className="object-cover" />
               </div>
             </motion.div>
           </div>

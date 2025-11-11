@@ -3,37 +3,23 @@ import {Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Poppins } from "next/font/google";
 
-
-const inter = Inter({
-  variable: "--font-inter",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const oswald = Oswald({
-  variable: "--font-oswald",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "AgapeGlobal",
-  description: "transform your body into an amazing thingy",
+export const metadata = {
+  title: "Agape Global",
+  description: "Empowering lives through accessible finance.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${oswald.variable} antialiased`}
-      > 
-        <Navbar />
-        <main className="pt-20">{children}</main>
-        
-        <Footer />
+      <body className={`${poppins.className} bg-black text-white`}>
+        {children}
       </body>
     </html>
   );

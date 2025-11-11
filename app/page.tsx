@@ -1,25 +1,19 @@
-import CallToAction from "@/components/CallToAction";
-import CoreValues from "@/components/CoreValues";
-import Footer from "@/components/Footer";
+import AboutSection from "@/components/AboutSection";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import TeamCards from "@/components/TeamCards";
-import WhoWeAre from "@/components/WhoWeAre";
+import ServiceCards from "@/components/ServiceCards";
 import ProjectCards from "@/components/ProjectCards";
-import AnniversarySection from "@/components/AnniversarySection";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import AboutCompany from "@/components/AboutCompany";
 
-
-export default function Home () {
-    return <main className="min-h-screen">
-        <Navbar />
-        <Hero />
-        <CoreValues />
-        <AnniversarySection />
-        <CallToAction />
-        <TeamCards />
-        <ProjectCards />
-        
-
-
+export default function HomePage() {
+  return (
+    <main className="overflow-hidden">
+      <Hero />
+      <AboutCompany />
+      <AboutSection />
+      <ServiceCards />
+      <WhyChooseUs />
+      <ProjectCards />
     </main>
+  );
 }

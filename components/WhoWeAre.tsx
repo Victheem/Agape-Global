@@ -42,7 +42,7 @@ export default function WhoWeAre () {
               className="relative"
             >
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-800 h-72 md:h-96">
-                <Image src="/images/woman 6.jpg" alt="Who we are image" fill className="object-cover" />
+                <Image src="/images/poverty.jpg" alt="Who we are image" fill className="object-cover" />
               </div>
             </motion.div>
           </div>
