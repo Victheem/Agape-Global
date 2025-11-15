@@ -19,7 +19,7 @@ const ServicesDropdown = () => {
     >
       <button
         onClick={toggleDropdown}
-        className="flex items-center gap-1 text-gray-800 hover:text-blue-600 transition"
+        className="flex items-center gap-1 text-white hover:text-blue-600 transition"
       >
         Services
         <ChevronDown

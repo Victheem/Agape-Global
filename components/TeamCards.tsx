@@ -5,26 +5,26 @@ import { Facebook, Twitter, Linkedin, Phone } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Ben Babatunde",
-    role: "Founder & CEO",
+    name: "Engr. Temidayo Ben Babatunde",
+    role: "MD & CEO",
     image: "/images/ceo.jpg",
     bio: "A visionary entrepreneur with over a decade of experience in financial inclusion and micro-lending. Passionate about empowering small businesses through accessible credit.",
   },
   {
-    name: "Toby Babatunde",
-    role: "Head of Operations",
+    name: "Mrs. Toby Ben-Babatunde",
+    role: "Managing Director",
     image: "/images/tobi.jpg",
     bio: "Oversees business operations and ensures efficient service delivery. Tola is committed to excellence and innovation in microfinance management.",
   },
   {
-    name: "Grace Adewale",
-    role: "Customer Relations Lead",
+    name: "GGrace Oluwakemi Ajayi",
+    role: "Accountant/Admin Head",
     image: "/images/account.jpg",
     bio: "Grace builds and maintains client relationships, ensuring satisfaction and trust through empathy, transparency, and timely support.",
   },
   {
-    name: "Emmanuel John",
-    role: "Technology & Strategy Lead",
+    name: "Pst. Adedoyin Femi Mathew",
+    role: "Business Developer Manager",
     image: "/images/manager.jpg",
     bio: "Leads Agape’s digital transformation initiatives, focusing on data-driven strategies and financial technology innovation.",
   },
