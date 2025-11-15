@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-export default function AboutSection() {
+export default function Abouts() {
   return (
     <section className="bg-[#0B1220] text-white py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -41,9 +41,9 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="rounded-3xl overflow-hidden shadow-2xl">
+          <div className="rounded-3xl overflow-hidden shadow-2xl border border-[#0A66C2]/30">
             <Image
-              src="/images/phone.png"
+              src="/images/about-fintech.jpg"
               alt="Agape Global Service"
               width={600}
               height={400}

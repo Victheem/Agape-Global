@@ -1,5 +1,7 @@
-import AboutSection from "@/components/AboutSection";
+"use client"
+
 import Hero from "@/components/Hero";
+import AboutSection from "@/components/AboutSection";
 // import ServiceCards from "@/components/ServiceCards"
 import ProjectCards from "@/components/ProjectCards";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -13,11 +15,9 @@ export default function HomePage() {
       <AboutSection />
       {/* <ServiceCards /> */}
       <WhyChooseUs />
-      
       <AnniversarySection />
       <CallToAction />
-
-      <ProjectCards />
+     <ProjectCards />
     </main>
   );
 }
