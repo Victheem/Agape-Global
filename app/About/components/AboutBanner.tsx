@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function AboutBanner() {
   return (
-    <section className="relative w-full h-[70vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white overflow-hidden">
+    <section className="relative w-full h-[70vh] flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 text-white overflow-hidden pt-28">
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/40 z-0" />
 

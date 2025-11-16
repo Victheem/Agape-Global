@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import Hero from "@/components/Hero";
-import AboutSection from "@/components/AboutSection";
-// import ServiceCards from "@/components/ServiceCards"
-import ProjectCards from "@/components/ProjectCards";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import CallToAction from "@/components/CallToAction";
-import AnniversarySection from "@/components/AnniversarySection";
+import Hero from "@components/Hero";
+import AboutSection from "@components/AboutSection";
+// import ServiceCards from "@components/ServiceCards";
+import ProjectCards from "@components/ProjectCards";
+import WhyChooseUs from "@components/WhyChooseUs";
+import CallToAction from "@components/CallToAction";
+import AnniversarySection from "@components/AnniversarySection";
 
 export default function HomePage() {
   return (
@@ -17,7 +17,7 @@ export default function HomePage() {
       <WhyChooseUs />
       <AnniversarySection />
       <CallToAction />
-     <ProjectCards />
+      <ProjectCards />
     </main>
   );
 }
