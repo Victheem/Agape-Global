@@ -4,7 +4,7 @@ import VisionMission from "@/app/About/components/VisionMission";
 import FAQSection from "@/app/About/components/FAQSection";
 import CareerSection from "@/app/About/components/CareerSection";
 import AboutServices from "@/app/About/components/AboutServices";
-// import WhyChooseUs from "@/app/About/components/WhyChooseUs";
+
 
 export default function AboutPage() {
   return (
@@ -15,7 +15,7 @@ export default function AboutPage() {
       <AboutServices />
       <FAQSection />
       <CareerSection />
-      {/* <WhyChooseUs /> */}
+     
     </>
   );
 }
