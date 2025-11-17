@@ -1,59 +1,63 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section className="bg-[#0B1220] text-white py-20 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Left Content */}
+    <section className="w-full py-20 bg-black text-gray-600">
+      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Text Section */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="space-y-6"
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#0A66C2] mb-6">
-            Empowering Your Financial Future with Smart Digital Solutions
+          <h2 className="text-4xl font-bold text-white">
+            Who <span className="text-blue-400">We Are</span>
           </h2>
-          <p className="text-gray-300 leading-relaxed mb-6">
-            Agape Global Service is a forward-thinking Fintech company dedicated to redefining
-            lending and financial access across Africa. We leverage technology to provide seamless,
-            secure, and affordable loans for individuals, entrepreneurs, and organizations.
+
+          <p className="text-lg leading-relaxed text-gray-300">
+            We are a dynamic and innovative company dedicated to building digital
+            experiences that inspire, connect, and transform lives. Our passion lies in
+            creating solutions that merge creativity with technology to drive growth and
+            lasting impact.
           </p>
-          <div className="flex gap-4">
-            <Button
-              className="bg-[#0A66C2] hover:bg-[#084b91] text-white rounded-2xl px-6 py-5 text-lg shadow-lg"
-              asChild
-            >
-              <a href="/about">Read More</a>
-            </Button>
-          </div>
+
+          <p className="text-lg leading-relaxed text-gray-300">
+            From humble beginnings, we’ve grown into a team of forward thinkers who
+            believe that design, technology, and strategy work best when seamlessly
+            integrated. Every project we take on is another opportunity to redefine what’s
+            possible.
+          </p>
+
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            className="bg-blue-600 text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-yellow-500 transition"
+          >
+            Learn More
+          </motion.button>
         </motion.div>
 
-        {/* Right Image */}
+        {/* Image Section */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="relative"
+          className="flex justify-center md:justify-end"
         >
-          <div className="rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative w-[300px] md:w-[400px] h-[400px]">
             <Image
-              src="/images/phone.png"
-              alt="Agape Global Service"
-              width={600}
-              height={400}
-              className="object-cover w-full h-full"
-              priority
+              src="/images/girl.png"
+              alt="About us"
+              fill
+              className="object-cover rounded-2xl"
             />
           </div>
-          {/* Floating gradient glow */}
-          <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#0A66C2]/20 rounded-full blur-3xl"></div>
         </motion.div>
+
       </div>
     </section>
   );

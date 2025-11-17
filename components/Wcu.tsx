@@ -31,7 +31,7 @@ const features = [
   },
 ];
 
-export default function WhyChooseUs() {
+export default function Wcu () {
   return (
     <section className="bg-gray-950 text-gray-200 py-20 px-6 relative overflow-hidden">
       {/* Glowing Background Accent */}

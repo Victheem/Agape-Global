@@ -25,7 +25,7 @@ const projects = [
   },
 ];
 
-export default function ProjectGallery() {
+export default function ProjectCards() {
   return (
     <section className="bg-gray-900 py-20">
       <div className="max-w-7xl mx-auto px-6 text-center">

@@ -43,7 +43,7 @@ export default function Abouts() {
         >
           <div className="rounded-3xl overflow-hidden shadow-2xl border border-[#0A66C2]/30">
             <Image
-              src="/images/about-fintech.jpg"
+              src="/images/woman 5.jpg"
               alt="Agape Global Service"
               width={600}
               height={400}

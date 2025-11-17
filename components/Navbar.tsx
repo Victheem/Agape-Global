@@ -39,23 +39,23 @@ export default function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-white">
           <motion.div whileHover={{ scale: 1.05 }}>
-            <Link href="/" className="hover:text-white">Home</Link>
+            <Link href="/" className="hover:text-blue">Home</Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }}>
-            <Link href="/About" className="hover:text-blue">About</Link>
+            <Link href="/about" className="hover:text-blue">About</Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }}>
           
              <ServicesDropdown />          
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }}>
-            <Link href="/Career" className="hover:text-blue">Career</Link>
+            <Link href="/career" className="hover:text-blue">Career</Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }}>
-            <Link href="/Contact" className="hover:text-blue">Contact</Link>
+            <Link href="/contact" className="hover:text-blue">Contact</Link>
           </motion.div>
 
-          <Link href="/Apply" className="ml-4">
+          <Link href="/apply" className="ml-4">
             <motion.button
               whileHover={{
                 scale: 1.05,

@@ -37,10 +37,10 @@ const ServicesDropdown = () => {
             transition={{ duration: 0.2 }}
             className="absolute bg-white shadow-xl rounded-xl mt-2 w-64 border border-gray-100 z-50"
           >
-            <ul className="flex flex-col py-15 text-gray-700 text-sm ">
+            <ul className="flex flex-col py-15 text-white text-sm bg-black">
               <li>
                 <Link
-                  href="/Services/educational-loan"
+                  href="/services/educational-loan"
                   onClick={closeDropdown}
                   className="block px-4 py-5 hover:bg-blue-50 hover:text-blue-600 rounded-md transition whitespace-nowrap border-b border-gray-200 last:border-none"
                 >
@@ -49,7 +49,7 @@ const ServicesDropdown = () => {
               </li>
               <li>
                 <Link
-                  href="/Services/salary-advance-loan"
+                  href="/services/salary-advance-loan"
                   onClick={closeDropdown}
                   className="block px-5 py-2 hover:bg-blue-50 hover:text-blue-600 rounded-md transition whitespace-nowrap border-b border-gray-200 last:border-none"
                 >
@@ -58,7 +58,7 @@ const ServicesDropdown = () => {
               </li>
               <li>
                 <Link
-                  href="/Services/small-scale-business-loan"
+                  href="/services/small-scale-business-loan"
                   onClick={closeDropdown}
                   className="block px-5 py-2 hover:bg-blue-50 hover:text-blue-600 rounded-md transition whitespace-nowrap  border-b border-gray-200 last:border-none"
                 >
@@ -67,7 +67,7 @@ const ServicesDropdown = () => {
               </li>
               <li>
                 <Link
-                  href="/Services/asset-loan"
+                  href="/services/asset-loan"
                   onClick={closeDropdown}
                   className="block px-5 py-2 hover:bg-blue-50 hover:text-blue-600 rounded-md transition  whitespace-nowrap border-b border-gray-200 last:border-none "
                 >

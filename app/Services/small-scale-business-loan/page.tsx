@@ -8,7 +8,7 @@ export default function SmallScaleBusinessLoan() {
   return (
     <div className="bg-gray-950 text-gray-200">
       {/* Hero Section */}
-        <section className="relative h-[70vh] flex items-center justify-center bg-black">
+        <section className="relative h-[100vh] flex items-center justify-center bg-black">
         <img
           src="/images/sme2.jpg"
           alt="Educational Loan Banner"
@@ -135,7 +135,7 @@ export default function SmallScaleBusinessLoan() {
           <div className="mt-10">
             <Link
               href="/Apply"
-              className="bg-black text-white px-10 py-3 rounded-full font-medium hover:bg-green-800 transition"
+              className="bg-white text-black px-10 py-3 rounded-full font-medium hover:bg-yellow transition"
             >
               Apply for Business Loan
             </Link>

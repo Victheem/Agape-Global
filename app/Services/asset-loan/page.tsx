@@ -8,7 +8,7 @@ export default function AssetLoan() {
   return (
     <div className="bg-gray-950 text-black">
       {/* Hero Section */}
-        <section className="relative h-[70vh] flex items-center justify-center bg-black">
+        <section className="relative h-[100vh] flex items-center justify-center bg-black">
         <img
           src="/images/asset-loan2.jpg"
           alt="Educational Loan Banner"
@@ -27,7 +27,7 @@ export default function AssetLoan() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="max-w-3xl mx-auto text-black text-lg"
+            className="max-w-3xl mx-auto text-white text-lg"
           >
             Empower your business growth with our flexible financing options.
               Whether you’re starting out or scaling up, Agape Global provides the 
@@ -112,10 +112,10 @@ export default function AssetLoan() {
       {/* Requirements Section */}
       <section className="bg-black py-14">
         <div className="container mx-auto px-6 text-center">
-          <h3 className="text-2xl font-semibold mb-6 text-blue-700">
+          <h3 className="text-2xl font-semibold mb-6 text-white">
             Loan Requirements
           </h3>
-          <div className="flex flex-wrap justify-center gap-8 text-gray-700">
+          <div className="flex flex-wrap justify-center gap-8 text-white">
             {[
               'Invoice or quotation from asset vendor',
               'Valid means of identification',

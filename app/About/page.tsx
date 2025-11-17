@@ -1,9 +1,9 @@
-import AboutBanner from "@/app/About/components/AboutBanner";
-import AboutSection from "@/app/About/components/AboutSection";
-import VisionMission from "@/app/About/components/VisionMission";
-import FAQSection from "@/app/About/components/FAQSection";
-import CareerSection from "@/app/About/components/CareerSection";
-import AboutServices from "@/app/About/components/AboutServices";
+import AboutBanner from "@/components/AboutBanner";
+import AboutSection from "@/components/AboutSection";
+import VisionMission from "@/components/VisionMission";
+import FAQSection from "@/components/FAQSection";
+import CareerSection from "@/components/CareerSection";
+import AboutServices from "@/components/AboutServices";
 
 
 export default function AboutPage() {

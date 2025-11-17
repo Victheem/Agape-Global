@@ -6,7 +6,7 @@ export default function EducationalLoanPage() {
   return (
     <main className="bg-gray-950 text-gray-200">
       {/* HERO SECTION */}
-      <section className="relative h-[70vh] flex items-center justify-center bg-black">
+      <section className="relative h-[100vh] flex items-center justify-center bg-black">
         <img
           src="/images/education2.jpg"
           alt="Educational Loan Banner"

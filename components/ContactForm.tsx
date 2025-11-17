@@ -44,7 +44,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 max-w-lg mx-auto">
+    <form onSubmit={handleSubmit} className="space-y-4 max-w-lg mx-auto py-50">
       <input
         type="text"
         name="name"
@@ -88,6 +88,9 @@ export default function ContactForm() {
         {loading ? "Sending..." : "Send Message"}
       </Button>
       {status && <p className="text-center mt-2">{status}</p>}
+
+      
     </form>
+
   );
 }

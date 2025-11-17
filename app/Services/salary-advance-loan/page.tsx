@@ -9,7 +9,7 @@ export default function SalaryAdvanceLoan() {
     <div className="bg-gray-950 text-gray-200">
 
 {/* Hero Section */}
-        <section className="relative h-[70vh] flex items-center justify-center bg-black">
+        <section className="relative h-[100vh] flex items-center justify-center bg-black">
         <img
           src="/images/salary2.jpg"
           alt="Educational Loan Banner"

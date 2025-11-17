@@ -17,7 +17,7 @@ const teamMembers = [
     bio: "Oversees business operations and ensures efficient service delivery. Tola is committed to excellence and innovation in microfinance management.",
   },
   {
-    name: "GGrace Oluwakemi Ajayi",
+    name: "Grace Oluwakemi Ajayi",
     role: "Accountant/Admin Head",
     image: "/images/account.jpg",
     bio: "Grace builds and maintains client relationships, ensuring satisfaction and trust through empathy, transparency, and timely support.",

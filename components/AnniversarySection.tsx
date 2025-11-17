@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const AnniversarySection = () => {
+export default function AnniversarySection () {
   return (
     <section className="relative bg-gradient-to-r from-indigo-900 via-black-600 to-indigo-900 text-white py-28 overflow-hidden flex flex-col md:flex-row items-center justify-between px-6 md:px-20">
       
@@ -97,4 +97,3 @@ const AnniversarySection = () => {
   );
 };
 
-export default AnniversarySection;

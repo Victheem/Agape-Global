@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-const AnniversarySection = () => {
+const Anniversary = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 py-20 text-center text-white">
       {/* Floating golden number */}

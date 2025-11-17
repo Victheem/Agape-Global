@@ -1,4 +1,4 @@
-import CareerBanner from "./components/CareerBanner";
+import CareerBanner from "@/components/CareerBanner";
 
 export default function CareerPage() {
   return (
