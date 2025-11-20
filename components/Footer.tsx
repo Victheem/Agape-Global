@@ -6,11 +6,13 @@ import { Instagram, Twitter, Linkedin, Facebook } from "lucide-react"; // option
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 border-t border-gray-800">
+    <footer className="bg-secondary text-neutral-100 transition-colors
+    duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-12">
 
         {/* ==== Brand & About ==== */}
-        <div className="space-y-4">
+        <div className="space-y-8">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#003366] to-[#0f4b8f] flex items-center justify-center text-white font-bold">
               AG
@@ -64,6 +66,7 @@ export default function Footer() {
       {/* ==== Bottom Copyright ==== */}
       <div className="border-t border-gray-800 mt-4 py-4 text-center text-gray-500 text-sm">
         &copy; {new Date().getFullYear()} Agape Global. All rights reserved.
+      </div>
       </div>
     </footer>
   );

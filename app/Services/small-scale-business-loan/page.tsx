@@ -9,7 +9,7 @@ export default function SmallScaleBusinessLoan() {
     <div className="bg-gray-950 text-gray-200">
       {/* Hero Section */}
         <section className="relative h-[100vh] flex items-center justify-center bg-black">
-        <img
+        <Image
           src="/images/sme2.jpg"
           alt="Educational Loan Banner"
           className="absolute inset-0 w-full h-full object-cover opacity-40"

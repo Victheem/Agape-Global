@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import ServicesDropdown from "./ServicesDropdown";
-import MobileMenu from "./MobileMenu";
+// import MobileMenu from "./MobileMenu";
 
 
 export default function Navbar() {

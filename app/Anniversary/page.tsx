@@ -17,7 +17,7 @@ export default function AnniversaryPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white relative overflow-hidden p-8">
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-black text-white relative overflow-hidden p-8 pt-28">
       
       {/* 🎉 Floating 5 Years Star Animation */}
       <motion.div
@@ -34,7 +34,7 @@ export default function AnniversaryPage() {
           >
             ⭐
           </motion.div>
-          <span className="absolute inset-0 flex items-center justify-center font-extrabold text-2xl text-black">
+          <span className="absolute inset-0 flex items-center justify-center font-extrabold text-2xl text-white">
             5 YEARS
           </span>
         </div>
@@ -73,7 +73,7 @@ export default function AnniversaryPage() {
       {/* 🎊 Anniversary Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-between py-24 relative z-10">
         <div className="max-w-xl space-y-4">
-          <h1 className="text-5xl md:text-6xl font-extrabold text-yellow-400 drop-shadow-lg">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-blue drop-shadow-lg">
             Celebrating 5 Incredible Years 🎉
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed">
@@ -81,9 +81,9 @@ export default function AnniversaryPage() {
             part of our story. Here’s to innovation, teamwork, and the next big chapter!
           </p>
           <motion.a
-            href="/journey"
+            href=""
             whileHover={{ scale: 1.05 }}
-            className="inline-block bg-yellow-500 text-black px-6 py-3 rounded-full font-bold mt-4 shadow-lg hover:bg-yellow-400 transition-all"
+            className="inline-block bg-blue text-white px-6 py-3 rounded-full font-bold mt-4 shadow-lg hover:bg-yellow-400 transition-all"
           >
             View Our Journey →
           </motion.a>
@@ -96,18 +96,18 @@ export default function AnniversaryPage() {
           className="mt-12 md:mt-0"
         >
           <Image
-            src="/images/staff-celebration.png"
+            src="/images/ballon3.png"
             alt="Company Staff Celebration"
             width={500}
             height={400}
-            className="rounded-2xl shadow-2xl border border-gray-800"
+            className="rounded-2xl shadow-2xl"
           />
         </motion.div>
       </section>
 
       {/* 📸 Pinterest-Style Anniversary Gallery */}
       <section className="mt-20">
-        <h2 className="text-3xl font-bold mb-6 text-center text-yellow-400">
+        <h2 className="text-3xl font-bold mb-6 text-center text-Blue">
           Anniversary Gallery
         </h2>
         <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4">

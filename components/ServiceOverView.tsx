@@ -53,7 +53,7 @@ export default function ServiceOverview() {
               className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-yellow-400/10 transition-all"
             >
               <Link href={service.href}>
-                <img
+                <Image
                   src={service.img}
                   alt={service.title}
                   className="w-full h-56 object-cover"

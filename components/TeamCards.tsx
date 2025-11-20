@@ -60,7 +60,7 @@ const TeamCards = () => {
               <div className="relative w-full h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
                 {/* Front of Card */}
                 <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-800 backface-hidden">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover"

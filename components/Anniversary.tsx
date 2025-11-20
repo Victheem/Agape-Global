@@ -67,4 +67,4 @@ const Anniversary = () => {
   );
 };
 
-export default AnniversarySection;
+export default Anniversary;

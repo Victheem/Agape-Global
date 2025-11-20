@@ -4,59 +4,48 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Navbar from "@/components/Navbar";
-import { Clock, Building2, LineChart } from "lucide-react";
-
-import Footer from "@/components/Footer";
 import ServiceCards from "./ServiceCards";
 
 /**
- * Home (step 1 of N) - Hero, Who We Are, About Snapshot
- * - Place images in public/images/: hero-woman.jpg, who-we-are.jpg, fintech-dashboard.jpg
- * - Requires: framer-motion, tailwindcss
+ * Cleaned Hero Page – unused icons removed
  */
 
-export default function Hero () {
+export default function Hero() {
   useEffect(() => {
-    // small safety for servers where motion might misbehave if SSR/no-window
-    // (not strictly necessary in most Next projects)
     return () => {};
   }, []);
 
   return (
     <>
-      
-
-    <main className="bg-black text-white pt-28">
-
-
-
+      <main className="bg-black text-white pt-28">
         {/* ===== HERO ===== */}
-        <section className="h-screen relative z-10 py-20 ">
+        <section className="h-screen relative z-10 py-20">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
             {/* Left: headline + copy + CTAs */}
             <motion.div
               initial={{ opacity: 0, x: -18 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, ease: "easeInOut"}}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
               className="space-y-6"
             >
               <h4 className="text-sm text-[#F5B700] font-semibold mb-2">-Welcome</h4>
               <h1 className="text-4xl text-blue-600 font-bold mb-4">Aiders Global (AGAPE)</h1>
-             
-              <motion.h1 
-                className="text-4xl md:text-5xl font-extrabold leading-tight">
+
+              <motion.h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
                 Empowering Lives Through{" "}
                 <span className="text-blue-600">Accessible Finance</span>
               </motion.h1>
 
-              <motion.p 
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.7 }}
-              className="text-gray-300 max-w-2xl">
-                Agape Global (Aiders) makes microloans simple, fast and human — helping students,
-                wage earners and small businesses access capital to grow and thrive.
+              <motion.p
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.7 }}
+                className="text-gray-300 max-w-2xl"
+              >
+                Agape Global (Aiders) makes microloans simple, fast and human —
+                helping students, wage earners and small businesses access capital to
+                grow and thrive.
               </motion.p>
 
               <div className="flex flex-wrap gap-4">
@@ -64,7 +53,6 @@ export default function Hero () {
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     className="bg-transparent border border-gray-700 px-5 py-3 rounded-2xl text-white"
-                    aria-label="Learn more about Agape Global"
                   >
                     Learn More
                   </motion.button>
@@ -74,7 +62,6 @@ export default function Hero () {
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     className="bg-blue-600 text-black px-5 py-3 rounded-2xl font-semibold"
-                    aria-label="View our services"
                   >
                     Our Services
                   </motion.button>
@@ -84,7 +71,10 @@ export default function Hero () {
               <div className="flex gap-6 text-sm text-gray-400 mt-6">
                 <div>
                   <div className="text-xs text-gray-300">Address</div>
-                  <div className="max-w-xs">Mercy Eye Hospital Complex, Plot 15, Umar Audi Road, Fate Round About, Ilorin</div>
+                  <div className="max-w-xs">
+                    Mercy Eye Hospital Complex, Plot 15, Umar Audi Road,
+                    Fate Round About, Ilorin
+                  </div>
                 </div>
 
                 <div>
@@ -118,7 +108,6 @@ export default function Hero () {
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -top-4 -right-6 bg-[#0f4b8f] text-white px-3 py-2 rounded-xl shadow"
-                aria-hidden
               >
                 📈 +12%
               </motion.div>
@@ -128,12 +117,11 @@ export default function Hero () {
                 animate={{ x: [0, 10, 0] }}
                 transition={{ duration: 3.5, repeat: Infinity, delay: 0.6 }}
                 className="absolute bottom-8 -left-6 bg-green-600 text-white px-3 py-2 rounded-xl shadow"
-                aria-hidden
               >
                 ₦48.2M
               </motion.div>
 
-              {/* subtle stat ring overlaid */}
+              {/* subtle stat ring */}
               <div className="absolute -bottom-10 right-8">
                 <AnimatedStatRing size={120} progress={70} label="Loans" color="#F5B700" />
               </div>
@@ -141,251 +129,253 @@ export default function Hero () {
           </div>
         </section>
 
-        
-        
         {/* ===== WHO WE ARE ===== */}
         <section className="py-16 border-t border-gray-800">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            {/* Left text */}
             <motion.div
-               initial={{ y: -20, opacity: 0 }}
-               whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.7 }}
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.7 }}
             >
               <h4 className="text-sm text-[#F5B700] font-semibold mb-2">Who we are</h4>
               <h2 className="text-3xl font-bold mb-4">Towards Poverty Alleviation</h2>
 
               <p className="text-gray-300 mb-4">
-                Founded in <strong>May 2020</strong>, Aiders Global (Agape) Nigeria Limited (AGAPE) was established with the mission to provide microloans
-                to individuals and small businesses — enabling them to purchase goods, access services, and support everyday enterprise growth.
+                Founded in <strong>May 2020</strong>, Aiders Global (Agape) Nigeria
+                Limited (AGAPE) was established with the mission to provide microloans
+                to individuals and small businesses.
               </p>
 
               <p className="text-gray-300 mb-4">
-                Our focus is the essential needs sector, especially Fast-Moving Consumer Goods (FMCG), where even small capital can create big impact.
+                Our focus is the essential needs sector, especially FMCG, where small
+                capital creates big impact.
               </p>
 
               <Link href="/about">
-                <motion.button whileHover={{ scale: 1.02 }} className="mt-2 bg-transparent border border-gray-700 px-4 py-2 rounded-xl">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  className="mt-2 bg-transparent border border-gray-700 px-4 py-2 rounded-xl"
+                >
                   Discover More
                 </motion.button>
               </Link>
             </motion.div>
 
-            {/* Right image */}
             <motion.div
-          initial={{ x: 50, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-800 h-72 md:h-96">
-                <Image src="/images/blacky.jpg" alt="Who we are image" fill className="object-cover" />
+                <Image
+                  src="/images/blacky.jpg"
+                  alt="Who we are image"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* ===== ABOUT SNAPSHOT (image left, content right) ===== */}
+        {/* ===== ABOUT SNAPSHOT ===== */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            {/* Left: fintech dashboard image */}
+
             <motion.div
               initial={{ opacity: 0, x: -12 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.7 }}
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-800 h-72 md:h-96">
-                <Image src="/images/dasborad black.jpg" alt="Fintech dashboard" fill className="object-cover" />
-              </div>{/* ===== Floating Statistic Bars ===== */}
-            <motion.div
-              animate={{ y: [0, -10, 0], scale: [1, 1.05, 1] }}
-              transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
-              className="absolute -top-6 left-6 bg-blue-600/90 text-white text-xs font-semibold px-3 py-2 rounded-xl shadow-lg shadow-blue-500/40 backdrop-blur-sm"
-            >
-              +12.4% Growth ↑
+                <Image
+                  src="/images/dasborad black.jpg"
+                  alt="Fintech dashboard"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+
+              {/* Floating bars */}
+              <motion.div
+                animate={{ y: [0, -10, 0], scale: [1, 1.05, 1] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="absolute -top-6 left-6 bg-blue-600/90 text-white text-xs font-semibold px-3 py-2 rounded-xl shadow-lg"
+              >
+                +12.4% Growth ↑
+              </motion.div>
+
+              <motion.div
+                animate={{ x: [0, 10, 0], opacity: [0.8, 1, 0.8] }}
+                transition={{ duration: 4, repeat: Infinity }}
+                className="absolute bottom-6 -right-6 bg-green-600/90 text-white text-xs font-semibold px-3 py-2 rounded-xl shadow-lg"
+              >
+                ₦48.2M Transactions
+              </motion.div>
+
+              <motion.div
+                animate={{ y: [0, 8, 0], rotate: [-2, 2, -2] }}
+                transition={{ duration: 3.5, repeat: Infinity }}
+                className="absolute top-1/2 -left-10 bg-purple-600/90 text-white text-xs font-semibold px-3 py-2 rounded-xl shadow-lg"
+              >
+                98.7% Uptime
+              </motion.div>
             </motion.div>
 
-            <motion.div
-              animate={{ x: [0, 10, 0], opacity: [0.8, 1, 0.8] }}
-              transition={{ duration: 4, repeat: Infinity, repeatType: "mirror" }}
-              className="absolute bottom-6 -right-6 bg-green-600/90 text-white text-xs font-semibold px-3 py-2 rounded-xl shadow-lg shadow-green-500/40 backdrop-blur-sm"
-            >
-              ₦48.2M Transactions
-            </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 8, 0], rotate: [-2, 2, -2] }}
-              transition={{ duration: 3.5, repeat: Infinity, repeatType: "mirror" }}
-              className="absolute top-1/2 -left-10 bg-purple-600/90 text-white text-xs font-semibold px-3 py-2 rounded-xl shadow-lg shadow-purple-500/40 backdrop-blur-sm"
-            >
-              98.7% Uptime
-            </motion.div>
-
-
-            </motion.div>
-
-            
-          
-        
-
-            {/* Right: content (pulling tone from About page) */}
-            
-            
-            
             <motion.div
               initial={{ opacity: 0, x: 12 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.7 }}
-              className=""
             >
               <h4 className="text-sm text-[#F5B700] font-semibold mb-2">About AGAPE</h4>
               <h2 className="text-3xl font-bold mb-4">Driving Financial Inclusion Across Nigeria</h2>
 
               <p className="text-gray-300 mb-4">
-                AGAPE combines local market insight with fintech innovation to deliver microloans that are fast, transparent and tailored.
-                We use data-driven underwriting and human support to ensure loans reach those who need them.
+                AGAPE combines local insight with fintech innovation to deliver fast,
+                transparent microloans.
               </p>
 
               <p className="text-gray-300 mb-6">
-                Whether you need to fund education, bridge payroll gaps, buy an asset, or grow a small business — we design products that help you move forward.
+                Whether for education, payroll, assets or business — we design products
+                that help you move forward.
               </p>
 
               <div className="flex gap-4">
                 <Link href="/apply">
-                  <motion.button whileHover={{ scale: 1.03 }} className="bg-blue-600 text-black rounded-2xl px-5 py-3 font-semibold">
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    className="bg-blue-600 text-black rounded-2xl px-5 py-3 font-semibold"
+                  >
                     Apply Now
                   </motion.button>
                 </Link>
 
                 <Link href="/services">
-                  <motion.button whileHover={{ scale: 1.03 }} className="bg-transparent border border-gray-700 px-5 py-3 rounded-2xl">
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    className="bg-transparent border border-gray-700 px-5 py-3 rounded-2xl"
+                  >
                     View Products
                   </motion.button>
                 </Link>
               </div>
             </motion.div>
+
           </div>
         </section>
 
+        {/* ===== LOAN CATEGORIES ===== */}
+        <section className="py-20 border-t border-gray-800 bg-[#0A0A0A]">
+          <div className="max-w-7xl mx-auto px-6 text-center">
 
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl font-bold mb-4"
+            >
+              Smart Loan Categories
+            </motion.h2>
 
-{/* SHORT SECTION */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-gray-400 max-w-2xl mx-auto mb-12"
+            >
+              Whether you need quick capital or long-term support — AGAPE has the
+              perfect product for you.
+            </motion.p>
 
-{/* ===== LOAN CATEGORIES (Short-Term / Long-Term / Tailored) ===== */}
-<section className="py-20 border-t border-gray-800 bg-[#0A0A0A]">
-  <div className="max-w-7xl mx-auto px-6 text-center">
-    <motion.h2
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-      className="text-3xl font-bold mb-4"
-    >
-      Smart Loan Categories
-    </motion.h2>
-    <motion.p
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ delay: 0.2 }}
-      className="text-gray-400 max-w-2xl mx-auto mb-12"
-    >
-      Whether you need quick capital, long-term support, or customized financial help —
-      AGAPE has a product designed to fit your journey.
-    </motion.p>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {/* Card 1: Short-Term Loans */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        whileHover={{ scale: 1.03 }}
-        className="bg-[#111] border border-gray-800 rounded-2xl p-8 text-left shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
-        <div className="flex items-center gap-3 mb-4">
-          <div className="bg-[#F5B700]/20 text-[#F5B700] p-3 rounded-full">
-            💸
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.03 }}
+                transition={{ delay: 0.2, duration: 0.6 }}
+                className="bg-[#111] border border-gray-800 rounded-2xl p-8 text-left shadow-lg"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-[#F5B700]/20 text-[#F5B700] p-3 rounded-full">
+                    💸
+                  </div>
+                  <h3 className="text-xl font-semibold">Short-Term Loans</h3>
+                </div>
+                <p className="text-gray-400">
+                  Great for urgent needs or short-duration funding.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.03 }}
+                transition={{ delay: 0.3, duration: 0.6 }}
+                className="bg-[#111] border border-gray-800 rounded-2xl p-8 text-left shadow-lg"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-[#0f4b8f]/20 text-[#0f4b8f] p-3 rounded-full">
+                    🏦
+                  </div>
+                  <h3 className="text-xl font-semibold">Long-Term Loans</h3>
+                </div>
+                <p className="text-gray-400">
+                  Ideal for bigger projects or expansion.
+                </p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.03 }}
+                transition={{ delay: 0.4, duration: 0.6 }}
+                className="bg-[#111] border border-gray-800 rounded-2xl p-8 text-left shadow-lg"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="bg-green-600/20 text-green-600 p-3 rounded-full">
+                    📊
+                  </div>
+                  <h3 className="text-xl font-semibold">Tailored Solutions</h3>
+                </div>
+                <p className="text-gray-400">
+                  Customized packages designed exactly for your needs.
+                </p>
+              </motion.div>
+
+            </div>
           </div>
-          <h3 className="text-xl font-semibold">Short-Term Loans</h3>
-        </div>
-        <p className="text-gray-400">
-          Perfect for individuals and businesses needing quick, short-duration funding to
-          handle urgent expenses or bridge temporary gaps.
-        </p>
-      </motion.div>
+        </section>
 
-      {/* Card 2: Long-Term Loans */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.3, duration: 0.6 }}
-        whileHover={{ scale: 1.03 }}
-        className="bg-[#111] border border-gray-800 rounded-2xl p-8 text-left shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
-        <div className="flex items-center gap-3 mb-4">
-          <div className="bg-[#0f4b8f]/20 text-[#0f4b8f] p-3 rounded-full">
-            🏦
-          </div>
-          <h3 className="text-xl font-semibold">Long-Term Loans</h3>
-        </div>
-        <p className="text-gray-400">
-          Ideal for larger projects or business growth with flexible repayment plans that
-          make expansion achievable and sustainable.
-        </p>
-      </motion.div>
-
-      {/* Card 3: Tailored Financial Solutions */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay: 0.4, duration: 0.6 }}
-        whileHover={{ scale: 1.03 }}
-        className="bg-[#111] border border-gray-800 rounded-2xl p-8 text-left shadow-lg hover:shadow-2xl transition-all duration-300"
-      >
-        <div className="flex items-center gap-3 mb-4">
-          <div className="bg-green-600/20 text-green-600 p-3 rounded-full">
-            📊
-          </div>
-          <h3 className="text-xl font-semibold">Tailored Financial Solutions</h3>
-        </div>
-        <p className="text-gray-400">
-          Custom loan packages designed to meet unique financial needs, whether personal
-          or corporate — crafted for your exact situation.
-        </p>
-      </motion.div>
-    </div>
-  </div>
-</section>
-
-<ServiceCards />
+        <ServiceCards />
       </main>
-    
-         </>
-
-    
-
-      
+    </>
   );
 }
 
+
 /* -------------------------
-   Small helper: animated ring
-   ------------------------- */
-function AnimatedStatRing({ size = 120, progress = 60, label = "Stat", color = "#F5B700" }: { size?: number; progress?: number; label?: string; color?: string }) {
-  // stroke calculations for circle radius  (use r = size/2 - padding)
-  const r = 48; // chosen radius for viewbox 0..128
+   Animated Stat Ring
+------------------------- */
+function AnimatedStatRing({
+  size = 120,
+  progress = 60,
+  label = "Stat",
+  color = "#F5B700",
+}: {
+  size?: number;
+  progress?: number;
+  label?: string;
+  color?: string;
+}) {
+  const r = 48;
   const circumference = 2 * Math.PI * r;
   const dash = (1 - progress / 100) * circumference;
 
   return (
-    <svg width={size} height={size} viewBox="0 0 128 128" aria-hidden>
+    <svg width={size} height={size} viewBox="0 0 128 128">
       <circle cx="64" cy="64" r={r} stroke="#222" strokeWidth="8" fill="none" />
       <motion.circle
         cx="64"
@@ -400,7 +390,14 @@ function AnimatedStatRing({ size = 120, progress = 60, label = "Stat", color = "
         animate={{ strokeDashoffset: [circumference, dash] }}
         transition={{ duration: 1.4 }}
       />
-      <text x="64" y="70" textAnchor="middle" fill="#fff" fontSize="12" fontWeight={700}>
+      <text
+        x="64"
+        y="70"
+        textAnchor="middle"
+        fill="#fff"
+        fontSize="12"
+        fontWeight={700}
+      >
         {label}
       </text>
     </svg>

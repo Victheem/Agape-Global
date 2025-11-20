@@ -7,7 +7,7 @@ export default function EducationalLoanPage() {
     <main className="bg-gray-950 text-gray-200">
       {/* HERO SECTION */}
       <section className="relative h-[100vh] flex items-center justify-center bg-black">
-        <img
+        <Image
           src="/images/education2.jpg"
           alt="Educational Loan Banner"
           className="absolute inset-0 w-full h-full object-cover opacity-40"

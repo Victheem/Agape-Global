@@ -25,7 +25,7 @@ export default function Abouts() {
           </p>
           <div className="flex gap-4">
             <Button
-              className="bg-[#0A66C2] hover:bg-[#084b91] text-white rounded-2xl px-6 py-5 text-lg shadow-lg"
+              className="bg-blue-600 text-white font-semibold px-4 py-2 rounded-xl shadow transition-all duration-300"
               asChild
             >
               <a href="/about">Read More</a>

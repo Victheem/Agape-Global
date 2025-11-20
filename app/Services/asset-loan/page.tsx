@@ -9,7 +9,7 @@ export default function AssetLoan() {
     <div className="bg-gray-950 text-black">
       {/* Hero Section */}
         <section className="relative h-[100vh] flex items-center justify-center bg-black">
-        <img
+        <Image
           src="/images/asset-loan2.jpg"
           alt="Educational Loan Banner"
           className="absolute inset-0 w-full h-full object-cover opacity-40"
